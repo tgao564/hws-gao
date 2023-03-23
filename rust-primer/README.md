@@ -4,7 +4,7 @@ In this class, we use the Rust Programming Language for most of the programming 
 
 This primer is a series of short introductions to Rust concepts and pointers to the Rust book relevant chapters. It is not meant to be self-contained, but rather as an initial approach to the language that hopefully helps you get started with it and be successful in the class. You can find the Rust book at [https://doc.rust-lang.org/book/](https://doc.rust-lang.org/book/). The Rust book is a great (free) resource for learning Rust and we strongly recommend you consult it often as you go through this primer to make sure you understand all concepts.
 
-The primer is structured into 6 modules, 5 of which focus on certain areas of the language, while the sixth is a walkthrough of the CrustyDB codebase. Folders to each of these modules will be in the section above, and this is where you can find the information on each of the topics, including a few exercises.
+The primer is structured into 6 modules, 5 of which focus on certain areas of the language, while the sixth is a walkthrough of the CrustyDB codebase. Folders to each of these modules will be in the section above, and this is where you can find the information on each of the topics, including a few exercises. For now only 4 of the modules are released, with the last 2 coming closer to the second Crusty milestone.
 
 Last, you will need to install the Rust environment (or use a computer with the environment already installed) to work on the assignments. However, if you want to quickly sketch an idea or try out a language feature, we strongly recommend you [become familiar with the rust playground](https://play.rust-lang.org), which is a sandbox with an online interface that permits you experimenting with Rust by writing snippets and observing their output.
 
@@ -42,11 +42,3 @@ Module 4 focuses on serialization and deserialization, which is a basic but sign
 - Result Option
 
 
-## [Module 5](/module_5/README.md)
-- Traits
-- Threading
-- Useful Rust Standard Library Types (rc / arc / mutex / rwlock)
-
-## [Module 6](/module_6/README.md)
-Module 6 provides an overall picture of CrustyDB by proposing some guiding questions before we get our hands dirty on it. 
-- CrustyDB Walkthough 

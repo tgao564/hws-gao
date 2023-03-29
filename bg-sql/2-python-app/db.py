@@ -72,7 +72,7 @@ class DBManager:
 
 
     def get_all_designers(self):
-        """ Return a list of Designer objects that match the given desginer name. """
+        """ Return a list of all Designer objects """
         designers = []
         # TODO: Complete this function
 

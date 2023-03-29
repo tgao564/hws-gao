@@ -11,7 +11,7 @@ class Boardgame:
         Initialize Boardgame object.
         id, average score, number of votes, min/max players, min/max playtime are ints or floats.
         name is a string.
-        categories and designers are lists of strings.
+        designer is an optional string
         '''
         self.id = g_id
         self.name = name
@@ -34,10 +34,8 @@ class Boardgame:
 class Designer:
     def __init__(self, d_id: int, name: str, country: str):
         '''
-        Initialize Designer object.
-        id, average score, number of votes, min/max players, min/max playtime are ints or floats.
-        name is a string.
-        categories and designers are lists of strings.
+        Initialize a Designer object.
+        id, name, and country are strings.
         '''
         self.id = d_id
         self.name = name

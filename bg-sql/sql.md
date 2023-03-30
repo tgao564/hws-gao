@@ -91,7 +91,7 @@ Find the category id and count of games in the category, for categories that hav
 Find the category name of the most 5 popular categories, where popularity is defined as the highest average(e.g. mean) of avgscore for all  games in the category. Order the categories by average (e.g. mean) of avgscore descending, followed by category name ascending. Avgscore is an attribute of games that indicates what the game’s score is (where the values contributing to this come from users and are not included in the dataset). (given as category, avg)
 
 ### 12
-Extend the query for problem 4 to only show categories that have at least 15 games in them. (given as category, avg). Maintain the same sort order.
+Extend the query for the previous problem to only show categories that have at least 15 games in them. (given as category, avg). Maintain the same sort order.
 
 ### 13
 For each category show the designer that has the longest possible game as max (maxplaytime) -- considering only the games that have designers associated with them (e.g. you can omit games that have no designer).

@@ -1,1 +1,1 @@
-select name, avgscore from games where lower(name) like '%edition%' ORDER BY avgscore ASC limit 10;
+select name from games where name ILIKE '%edition%';

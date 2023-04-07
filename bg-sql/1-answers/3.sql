@@ -1,1 +1,1 @@
-select COUNT(*) as count, c.c_id from categories c group by c.c_id order by count desc, c.c_id desc limit 1;
+select COUNT(*) as count, c.c_id from categories c group by c.c_id order by count desc, c.c_id asc limit 1;

@@ -1,1 +1,1 @@
-select count(*) as count, c_id from categories group by c_id order by count desc, c_id ASC limit 1;
+select COUNT(*) as count, c.c_id from games g, categories c where g.g_id = c.c_id group by c.c_id order by count desc, c.c_id ASC limit 1;

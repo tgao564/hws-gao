@@ -1,0 +1,1 @@
+select c_id, COUNT(*) as count from gamecat group by c_id having count(*) >=15;

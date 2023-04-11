@@ -8,7 +8,7 @@ Step 1: Write a function that increments a number by 1.
 */
 
 pub fn plus_one(n: &mut i32) {
-    panic!("TODO milestone primer-mod2");
+    *n +=1;
 }
 
 
@@ -23,16 +23,22 @@ Create a Rectangle struct. Then, implement the following functions:
 */
 
 pub struct Rectangle {
-    panic!("TODO milestone primer-mod2");
+    pub width: u32,
+    pub height: u32,
 }
 
 impl Rectangle {
     pub fn is_square(&self) -> bool {
-    panic!("TODO milestone primer-mod2");
+     if self.width == self.height {
+        return true
+     }
+     else{
+        return false
+     }
     }
 
     pub fn calc_area(&self) -> u8 {
-    panic!("TODO milestone primer-mod2");
+        return (self.width * self.height) as u8
     }
 }
 
@@ -44,10 +50,18 @@ Match - Create a function with a match pattern that is able to sort coins.
 */
 
 pub enum Coin {
-    panic!("TODO milestone primer-mod2");
+    Penny,
+    Nickel,
+    Dime,
+    Quarter
+
 }
 
 pub fn coin_value(coin: Coin) -> u8 {
-    //TODO milestone primer-mod2
-    0
+    match coin {
+        Coin::Penny => 1,
+        Coin::Nickel => 5,
+        Coin::Dime => 10,
+        Coin::Quarter => 25,
+    }
 }

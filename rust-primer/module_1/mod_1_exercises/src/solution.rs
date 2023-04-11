@@ -1,7 +1,15 @@
 pub fn hello() -> &'static str {
-    panic!("TODO milestone primer-mod1");
+    return "Hello World!";
 }
 
 pub fn is_leap_year(yr: i32) -> bool {
-    panic!("TODO milestone primer-mod1");
+    if yr % 4 == 0{
+        if (yr % 400 != 0) && (yr % 100 == 0){
+            return false
+        }else{
+            return true
+        }
+    }else{
+        return false
+    }
 }

@@ -40,10 +40,28 @@ fn main() {
     Then, intitialize 3 different animals, and run cargo build to make sure your animals were initialized correctly.
 
     */
-
-    panic!("TODO milestone primer-mod3");
+    struct Animal<T, U> {
+        name: T,
+        animal_type: T,
+        age: U,
+    }
+    
+    let a1 = Animal {
+        name: "Sylvie",
+        animal_type: "cat",
+        age: 3,
+    };
+    let a2 = Animal {
+        name: "Ginger",
+        animal_type: "hamster",
+        age: 1,
+    };
+    let a3 = Animal {
+        name: "Quincy",
+        animal_type: "dog",
+        age: 12,
+    };
 
 }
 
-panic!("TODO milestone primer-mod3");
 

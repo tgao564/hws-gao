@@ -14,7 +14,7 @@ fn test_serialize_deserialize_data_to_disk() {
         test_map.insert(key, value);
     }
 
-    serialize_data_to_disk(&test_map.clone(), &filename).unwrap();
+    serialize_data_to_disk(test_map.clone(), &filename).unwrap();
     let return_map = deserialize_data_from_disk(&filename);
 
     assert_eq!(return_map == test_map, true);

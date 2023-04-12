@@ -13,7 +13,7 @@ fn main() {
         ("Mars".to_string(), 5),
     ]);
     if serialize {
-        serialize_data_to_disk(&data, &filename).unwrap();
+        serialize_data_to_disk(data, &filename).unwrap();
     } else {
         let deserialized_data = deserialize_data_from_disk(&filename);
         println!("The size of the hashmap is: {}", deserialized_data.len());

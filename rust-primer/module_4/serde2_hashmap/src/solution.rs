@@ -3,7 +3,7 @@ use std::fs::File;
 use std::io::{BufReader, Read, Write};
 use std::io::Error;
 
-pub fn serialize_data_to_disk(data: &HashMap<String, i32>, filename: &str) -> Result<(), Error> {
+pub fn serialize_data_to_disk(data: HashMap<String, i32>, filename: &str) -> Result<(), Error> {
     let mut file = File::create(filename)?;
     for (key, value) in data {
         let serialized = format!("{} {}\n", key, value);

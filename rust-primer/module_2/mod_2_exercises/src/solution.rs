@@ -8,9 +8,8 @@ Step 1: Write a function that increments a number by 1.
 */
 
 pub fn plus_one(n: &mut i32) {
-    *n +=1;
+    *n += 1;
 }
-
 
 /*
 TASK 2
@@ -29,16 +28,15 @@ pub struct Rectangle {
 
 impl Rectangle {
     pub fn is_square(&self) -> bool {
-     if self.width == self.height {
-        return true
-     }
-     else{
-        return false
-     }
+        if self.width == self.height {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     pub fn calc_area(&self) -> u8 {
-        return (self.width * self.height) as u8
+        return (self.width * self.height) as u8;
     }
 }
 
@@ -53,8 +51,7 @@ pub enum Coin {
     Penny,
     Nickel,
     Dime,
-    Quarter
-
+    Quarter,
 }
 
 pub fn coin_value(coin: Coin) -> u8 {

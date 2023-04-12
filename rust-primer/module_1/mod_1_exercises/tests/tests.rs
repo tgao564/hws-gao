@@ -1,7 +1,6 @@
 // use mod_1_exercises::solution::{hello, is_leap_year};
 use solution::{hello, is_leap_year};
 
-
 #[test]
 fn check_hello() {
     assert_eq!(hello(), "Hello World!");
@@ -21,4 +20,3 @@ fn check_leap_year2() {
 fn check_leap_year3() {
     assert_eq!(is_leap_year(1900), false);
 }
-

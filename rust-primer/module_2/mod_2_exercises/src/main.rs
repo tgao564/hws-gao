@@ -1,3 +1,3 @@
-use solution::{plus_one, Rectangle, Coin, coin_value};
+use solution::{coin_value, plus_one, Coin, Rectangle};
 
 fn main() {}

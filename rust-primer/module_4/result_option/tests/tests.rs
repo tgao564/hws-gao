@@ -3,7 +3,7 @@ use solution::*;
 #[test]
 #[should_panic]
 fn unwrap_bad_topping() {
-    check_topping(&Toppings::Cheetos).unwrap();
+    assert!(check_topping(&Toppings::Cheetos).is_err());
 }
 
 #[test]
@@ -33,8 +33,13 @@ fn test_has_topping()  {
     assert!(za.add_topping(Toppings::Sausage).is_ok());
     assert!(za.add_topping(Toppings::Sausage).is_ok());
     //This passes but is bad form... Can you fix it?
-    assert_eq!(2, za.has_topping(&Toppings::Sausage).unwrap());
+    match za.has_topping(&Toppings::Sausage) {
+        Some(count) => assert_eq!(count, 2),
+        None => panic!("Topping not found"),
+    }
     //FIXME, this does not use the interface correctly
-    assert_eq!(0, za.has_topping(&Toppings::Spinach).unwrap());
-
+    match za.has_topping(&Toppings::Spinach) {
+        Some(_) => panic!("Topping found unexpectedly"),
+        None => assert!(true),
+    }
 }

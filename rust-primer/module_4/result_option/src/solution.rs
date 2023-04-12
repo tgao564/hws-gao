@@ -25,7 +25,9 @@ impl Pizza {
     pub fn add_topping(&mut self, topping: Toppings) -> Result<(), PizzaError> {
         // FIXME. unwraps should only be called if we want the program to crash or are 100% certain 
         // the results is OK or some
-        check_topping(&topping).unwrap();
+        if check_topping(&topping).is_err() {
+            return Err(PizzaError {});
+        }
         self.toppings.push(topping);
         Ok(())
     }

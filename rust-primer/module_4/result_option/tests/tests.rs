@@ -3,7 +3,7 @@ use solution::*;
 #[test]
 #[should_panic]
 fn unwrap_bad_topping() {
-    assert!(check_topping(&Toppings::Cheetos).is_err());
+    check_topping(&Toppings::Cheetos).unwrap();
 }
 
 #[test]
